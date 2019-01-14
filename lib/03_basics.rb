@@ -24,4 +24,5 @@ def array_42(array)
 end
 
 def magic_array(array)
-	array.
+	array.flatten.sort.map{|a| a*2}.uniq.delete_if{|a| a%3 ==0}
+end
